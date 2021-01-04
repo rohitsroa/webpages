@@ -1,0 +1,218 @@
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+
+
+
+
+
+<OL>
+ <LI>
+ <A STYLE="FLOAT:LEFT" HREF="">Home</A>
+ </LI>
+ <LI>
+ <A STYLE="FLOAT:LEFT" HREF="">Contact Us</A>
+ </LI>
+ <LI><DIV CLASS="DROPDOWN">
+ <A STYLE="FLOAT:LEFT" CLASS="DROPBTN" HREF="">Admins</A>
+ <DIV CLASS="DROPDOWN-CONTENT">
+ <A HREF=""> </A>
+ <A HREF="">Nakul</A>
+ <A HREF="">Faheem</A>
+ <A HREF="">Mukeish</A>
+ <A HREF="">Lakshay</A>
+ </DIV>
+ </LI>
+ <LI>
+ <A CLASS="ACTIVE" STYLE="FLOAT:RIGHT" HREF="">About Us</A>
+ </LI>
+ </OL>
+
+
+<DIV CLASS="DROPDOWN">
+<BUTTON CLASS="DROPBTN">Admins</BUTTON>
+<DIV CLASS="DROPDOWN-CONTENT">
+<A HREF="">Lakshay</A>
+<A HREF="">Nakul</A>
+<A HREF="">Faheem</A>
+<A HREF="">Mukeish</A>
+</DIV>
+</DIV>
+
+
+OL {
+LIST-STYLE-TYPE: NONE;
+MARGIN: 0;
+PADDING: 0;
+WIDTH: 100%;
+BORDER: 1PX SOLID #E7E7E7;
+BACKGROUND-COLOR: #f1f1f1;
+TOP: 0;
+OVERFLOW: HIDDEN;
+}
+
+LI A {
+DISPLAY: BLOCK;
+COLOR: #666;
+PADDING: 8PX 16PX;
+TEXT-DECORATION: NONE;
+BORDER-RIGHT: 1PX SOLID WHITE;
+}
+LI A:HOVER:NOT(.ACTIVE) {
+BACKGROUND-COLOR: #555;
+COLOR: WHITE;
+}
+LI A.ACTIVE {
+COLOR: WHITE;
+BACKGROUND-COLOR: #4CAF50;
+}
+LI A.DROPBTN {
+DISPLAY: INLINE-BLOCK;
+TEXT-ALIGN: RIGHT;
+PADDING: 8PX 16PX;
+TEXT-DECORATION: NONE;
+CURSOR: POINTER;
+}
+LI DROPDOWN {
+DISPLAY: INLINE-BLOCK;
+}
+LI .DROPDOWN:HOVER {
+BACKGROUND-COLOR: GREEN;
+COLOR: WHITE;
+}
+
+
+.DROPBTN {
+BACKGROUND-COLOR: #4CAF50;
+COLOR: WHITE;
+PADDING: 8PX 16PX;
+BORDER: NONE;
+CURSOR: POINTER;
+}
+.DROPDOWN {
+POSITION: RELATIVE;
+DISPLAY: INLINE-BLOCK;
+}
+.DROPDOWN-CONTENT {
+DISPLAY: NONE;
+POSITION: ABSOLUTE;
+BACKGROUND-COLOR: #F9F9F9;
+MIN-WIDTH: 160PX;
+BOX-SHADOW: 0PX 8PX 16PX 0PX RGBA(0,0,0,0.2);
+Z-INDEX: 1;
+}
+.DROPDOWN-CONTENT A {
+COLOR: BLACK;
+PADDING: 8PX 16PX;
+TEXT-DECORATION: NONE;
+DISPLAY: BLOCK;
+}
+.DROPDOWN-CONTENT A:HOVER {
+BACKGROUND-COLOR: #F1F1F1;
+}
+.DROPDOWN:HOVER .DROPDOWN-CONTENT {
+DISPLAY: BLOCK;
+}
+.DROPDOWN:HOVER .DROPBTN {
+BACKGROUND-COLOR: #3E8E41;
+}
+
+
+
+LI DROPDOWN {
+DISPLAY: INLINE-BLOCK;
+}
+LI .DROPDOWN:HOVER {
+BACKGROUND-COLOR: GREEN;
+COLOR: WHITE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+<DIV ID="Home" CLASS="tabcontent">
+<A HREF="">Home</A>
+</DIV>
+<DIV ID="Contact Us" CLASS="tabcontent">
+ <A HREF="">Contact Us</A>
+ </DIV>
+ <DIV ID="Admins" CLASS="tabcontent">
+Admins
+ </DIV>
+ <DIV ID="About Us" CLASS="tabcontent">
+  <A  CLASS="ACTIVE" STYLE="FLOAT:RIGHT" HREF="">About Us</A>
+  </DIV>
+  <BUTTON CLASS="tablink" ONCLICK="openCity('Home',this,'RED')" ID="defaultOpen">Home</BUTTON>
+  <BUTTON CLASS="tablink" ONCLICK="openCity('Contact Us',this,'GREEN')">Contact Us</BUTTON>
+  <BUTTON CLASS="tablink" ONCLICK="openCity('Admins',this,'BLUE')">Admins</BUTTON>
+  <BUTTON CLASS="tablink" ONCLICK="openCity('About Us',this,'ORANGE')">About Us</BUTTON>
+   </DIV>

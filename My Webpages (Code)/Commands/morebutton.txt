@@ -1,0 +1,72 @@
+<html>
+<head ><center>
+<font style="bold" face="jokerman" color="orange" size="6"><img src="pictures/AG00158_.GIF" title="Studyhub.in"> STUDY HUB</font></center>
+
+<title>studyhub.in</title>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+function showHide(shID) 
+{
+   if (document.getElementById(shID)) 
+    {
+      if (document.getElementById(shID+'-show').style.display != 'none')
+       {
+         document.getElementById(shID+'-show').style.display = 'none';
+                  document.getElementById(shID).style.display = 'block';      
+       }
+
+      else 
+        {
+         document.getElementById(shID+'-show').style.display = 'inline';
+                  document.getElementById(shID).style.display = 'none'; 
+        }  
+    }
+}
+</script>
+
+<style type="text/css"> 
+   .more {
+      display: none;      border-top: 1px solid#000;
+      border-bottom: 1px solid#000;
+ }
+</style>
+<div id="wrap">   
+
+
+<center><font face = "elephant" size="5">Output device</font></center>
+<font face="alberts" size="4">
+<p>
+<div id="1">
+An output device show data & Information Final result.
+</div>
+<a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;"><BUTTON ONCLICK="showHide(shID)">Click here for See in Explain.</button></a></p> 
+<div id="example" class="more">
+
+<p>
+After computation is over the result must be supplied to the user. For this job the output unit is used.
+It converts the result in user readable form and sends it to some specific device. Such a devices which
+is used to communicate the processing results to user are known as output device. The most commonly
+output device is visual display unit and printer. </p>
+<p><a href="#" id="example-hide" class="hideLink" onclick="showHide('example');return false;">Hide this content.</a></p> 
+</div>
+</div>
+
+<pre>
+Output result are 2 types :-
+
+1.Soft copy output (Which is present in digital form in a computer)
+
+2.Hard copy output (Which are present in paper)
+
+Some Output device are :- 
+<ul type="circle"><li><a href="printer.html" title="printer">Printer <img src="images/AG00158_.GIF"  title="Studyhub.in"></a></li>	<li><a href="printer.html" title="printer">Speaker <img src="images/AG00158_.GIF" title="Studyhub.in"></a></li>
+<li><a href="printer.html" title="printer">Monitor <img src="images/AG00158_.GIF" title="Studyhub.in"></a></li>
+
+<font color=red><a href="http://www.studyhub.in" title="studyhub.in"><center>Homepage</center></a></font>
+</pre>
+</font>
+</body>
+</head>
+</html>

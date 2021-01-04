@@ -1,0 +1,231 @@
+<HTML><HEAD><TITLE>
+More Button 4
+</TITLE></HEAD>
+<STYLE>
+DIV.CONTAINER {
+    WIDTH: 100%;
+	BORDER: 1PX SOLID GRAY;
+}
+BODY {
+MARGIN: 0;
+}
+HEADER {
+ PADDING: 1EM;
+ COLOR: WHITE;
+ BACKGROUND-COLOR: LIGHTSALMON;
+ CLEAR: LEFT;
+ TEXT-ALIGN: LEFT;
+}
+FOOTER {
+ PADDING: 1EM;
+ COLOR: WHITE;
+ BACKGROUND-COLOR: CORNFLOWERBLUE;
+ CLEAR: LEFT;
+ TEXT-ALIGN: CENTER;
+}
+.TOPNAV {
+OVERFLOW: HIDDEN;
+BACKGROUND-COLOR: #F1F1F1;
+}
+.TOPNAV A {
+FLOAT: LEFT;
+COLOR: #555;
+BORDER: 1PX SOLID #E7E7E7;
+TEXT-ALIGN: CENTER;
+PADDING: 8PX 16PX;
+TEXT-DECORATION: NONE;
+}
+.DROPDOWN {
+FLOAT: LEFT;
+OVERFLOW: HIDDEN;
+}
+.DROPDOWN .DROPBTN {
+BORDER: 1PX SOLID #E7E7E7;
+OUTLINE: NONE;
+COLOR: #555;
+PADDING: 10PX 16PX;
+BACKGROUND-COLOR: INHERIT;
+}
+.TOPNAV A:HOVER, .DROPDOWN:HOVER .DROPBTN {
+BACKGROUND-COLOR: WHITE;
+}
+.TOPNAV A.ACTIVE {
+BACKGROUND-COLOR: #4CAF50;
+COLOR: WHITE;
+}
+.DROPDOWN-CONTENT {
+DISPLAY: NONE;
+POSITION: ABSOLUTE;
+BACKGROUND-COLOR: #F9F9F9;
+MIN-WIDTH: 160PX;
+BOX-SHADOW: 0PX 8PX 16PX 0PX RGBA(0,0,0,0.2);
+Z-INDEX: 1;
+}
+.DROPDOWN-CONTENT A {
+FLOAT: NONE;
+COLOR: BLACK;
+PADDING: 8PX 16PX;
+TEXT-DECORATION: NONE;
+DISPLAY: BLOCK;
+TEXT-ALIGN: LEFT;
+}
+.DROPDOWN-CONTENT A:HOVER {
+BACKGROUND-COLOR: #DDD;
+}
+.DROPDOWN:HOVER .DROPDOWN-CONTENT {
+DISPLAY: BLOCK;
+}
+.MORE {
+DISPLAY: NONE;
+BORDER-TOP: 1px SOLID#000;
+BORDER-BOTTOM: 1PX SOLID#000;
+WIDTH: 100%;
+TEXT-ALIGN: CENTER;
+BACKGROUND-COLOR: LIGHTBLUE;
+MARGIN-TOP: 20PX;
+}
+.BUTTON {
+BORDER-RADIUS: 4PX;
+BACKGROUND-COLOR: #F4511E;
+BORDER: NONE;
+COLOR: #FFFFFF;
+TEXT-ALIGN: CENTER;
+PADDING: 8PX 16PX;
+WIDTH: 200PX;
+TRANSITION: ALL 0.5S;
+CURSOR: POINTER;
+MARGIN: 5PX;
+}
+.BUTTON SPAN {
+CURSOR: POINTER;
+DISPLAY: INLINE-BLOCK;
+POSITION: RELATIVE;
+TRANSITION: 0.5S;
+}
+.BUTTON SPAN:AFTER {
+CONTENT: '\00BB';
+POSITION: ABSOLUTE;
+OPACITY: 0;
+TOP: 0;
+RIGHT: -20PX;
+TRANSITION: 0.5S;
+}
+.BUTTON:HOVER SPAN {
+PADDING-RIGHT: 25PX;
+}
+.BUTTON:HOVER SPAN:AFTER {
+OPACITY: 1;
+RIGHT: 0;
+}
+</STYLE>
+<BODY LINK="WHITE" BACKGROUND="C:\Users\SONY\Desktop\Webpage\Pictures\Background - Wave.PNG">
+<DIV CLASS="CONTAINER">
+ <HEADER>
+   <H1 ALIGN="CENTER"><I><FONT COLOR="WHITE" FACE="Kristen ITC"><STRONG>Study Hub</STRONG><SUB>.com</SUB></FONT></I></H1>
+</HEADER>
+</DIV>
+<DIV CLASS="TOPNAV">
+ <A HREF="">Home</A>
+ <A HREF="">Contact Us</A>
+ <DIV CLASS="DROPDOWN">
+ <BUTTON CLASS="DROPBTN">Admins</BUTTON>
+ <DIV CLASS="DROPDOWN-CONTENT">
+ <A HREF="">Nakul</A>
+ <A HREF="">Faheem</A>
+ <A HREF="">Mukeish</A>
+ <A HREF="">Lakshay</A>
+ </DIV>
+ </DIV>
+ <A  CLASS="ACTIVE" STYLE="FLOAT:RIGHT" HREF="">About Us</A>
+ </DIV>
+ <CENTER>
+<BR>
+<HR SIZE=7 WIDTH=60% ALIGN=LEFT COLOR=BROWN NOSHADE>
+<HR SIZE=7 WIDTH=60% ALIGN=RIGHT COLOR=BROWN NOSHADE>
+<BR>
+<H2><I><FONT COLOR="GOLDENROD" FACE="Elephant">Intro<U>duction</U></FONT></I></H2>
+<P>
+<FONT FACE="IMPACT">
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+<DIV ID="WRAP">   
+<DIV ID="1">
+<H2><I><FONT COLOR="GOLDENROD" FACE="Elephant">MO<U>REBUTTON</U></FONT></I></H2>
+</DIV>
+<A HREF="#" ID="example-show" CLASS="showlink" ONCLICK="showHide('example');return false;"><BUTTON CLASS="BUTTON" ONCLICK="showHide(shID)"><SPAN>Click here for See in Explain.</SPAN></BUTTON></A> 
+<DIV ID="example" CLASS="MORE">
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+<A HREF="#" ID="example-hide" CLASS="hidelink" ONCLICK="showHide('example');return false;"><BUTTON CLASS="BUTTON"><SPAN>Hide this content.</SPAN></BUTTON></A> 
+</DIV>
+</DIV>
+</FONT>
+</P>
+<BR>
+<HR SIZE=7 WIDTH=60% ALIGN=LEFT COLOR=BROWN NOSHADE>
+<HR SIZE=7 WIDTH=60% ALIGN=RIGHT COLOR=BROWN NOSHADE>
+<BR>
+</CENTER>
+ <DIV CLASS="CONTAINER"> 
+<FOOTER>
+StudyHub is optimized for learning, testing, and training. Examples might be simplified to improve reading 
+and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we 
+cannot warrant full correctness of all content.
+<BR><BR>
+All Rights Reserved.
+<BR><BR>
+Copyright &copy; <STRONG>Study Hub.com</STRONG> |   
+<A HREF="MAILTO:example@gmail.com">Contact Us</A>
+</FOOTER>
+</DIV>
+<SCRIPT>
+function showHide(shID) 
+{
+   if (document.getElementById(shID)) 
+    {
+      if (document.getElementById(shID+'-show').style.display != 'none')
+       {
+         document.getElementById(shID+'-show').style.display = 'none';
+                  document.getElementById(shID).style.display = 'block';      
+       }
+
+      else 
+        {
+         document.getElementById(shID+'-show').style.display = 'inline';
+                  document.getElementById(shID).style.display = 'none'; 
+        }  
+    }
+}
+</SCRIPT>
+</BODY>
+</HTML>

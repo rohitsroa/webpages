@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>StudyHub | Printers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Study, studyhub, studyhub.ga " />
+    <meta name="author" content="Mukesh Baghel" />
+    <meta name="description" content="Studyhub.ga studyhub tutorials free , free learnig" />
+    <link rel="stylesheet" href="CSS/w3.css" />
+    <link rel="stylesheet" href="CSS/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/font-awesome-4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="CSS/studyhub1.css" />
+    <link rel="icon" href="favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" href="favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="favicons/favicon-24x24.png" sizes="24x42" />
+    <link rel="icon" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" href="favicons/favicon-160x160.png" sizes="160x160" />
+    <link rel="icon" href="favicons/favicon-196x196.png" sizes="196x196" />
+</head>
+<body onscroll="stickyNav()">
+
+    <div class="w3-card-4 w3-container w3-margin-top w3-center w3-round-xlarge">
+        <h1>
+            <a href="index.html" style="text-decoration:none; font-family:Lobster; font-size:35px;">
+                <span class="glyphicon glyphicon-leaf w3-text-teal w3-xxxlarge"></span>
+                <br /><span class="w3-border">
+                    <span class="w3-teal">Study</span>
+                    <span class="w3-text-teal">Hub</span>
+                </span>
+            </a>
+        </h1>
+    </div>
+    <div id="nav" class="w3-bar w3-card-4 w3-padding-16 w3-round-large w3-margin-top w3-white">
+        <button class="w3-bar-item w3-button w3hover-green w3-border-right" onclick="w3_open()">
+            <div style="background-color:black; margin-bottom:3px;height:3px; width:17px;"></div>
+            <div style="background-color:black; margin-bottom:3px; height:3px; width:14px;"></div>
+            <div style="background-color:black; margin-bottom:3px; height:3px; width:10px;"></div>
+        </button>
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-green w3-border-right">StudyHub</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-green w3-border-right">Home</a>
+        <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-green w3-border-right">Contact</a>
+        <a href="#" class="w3-bar-item w3-right w3-hide-large w3-hide-medium w3-button " onclick="opennav(), xanimation(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </a>
+        <a href="AboutUs.html" class="w3-hide-small w3-right w3-button w3-hover-green w3-border-right w3-border-left w3-margin-right">About Us</a>
+    </div>
+
+
+
+    <div id="mobNav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-center w3-card w3-light-gray w3-animate-opacity">
+        <a href="index.html" class="w3-bar-item w3-button w3-border-bottom">Home</a>
+        <a href="Contact.html" class="w3-bar-item w3-button w3-border-bottom">Contact</a>
+        <a href="AboutUs.html" class=" w3-bar-item w3-button w3-border-bottom">About Us</a>
+    </div>
+
+    <div class="w3-sidebar w3-bar-block w3-card-2 w3-center" id="mySidebar">
+        <div class="w3-bar-item w3-button w3-green w3-hover-green">
+            <h3>
+                <span class="glyphicon glyphicon-leaf w3-text-teal w3-xxlarge"></span><br />
+                <span class="w3-border">
+                    <span class="w3-teal">Study</span>
+                    <span class="w3-text-white">Hub</span>
+                </span>
+            </h3>
+            <button class="w3-display-topright w3-hover-red w3-button w3-xlarge w3-text-red" onclick="w3_close()">&times;</button>
+        </div>
+        <div class="w3-dropdown-hover  w3-animate-left">
+            <button class="w3-button w3-border-bottom  w3-center">Computer Info.&nbsp;<span class="fa fa-chevron-down"></span></button>
+            <div class="w3-dropdown-content">
+                <a href="#" class="w3-bar-item w3-border-bottom w3-center">How Does Computer Wrorks!</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-center w3-border-bottom">Computer Hardware&nbsp;<span class="fa fa-chevron-down"></span></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-left">
+                <a href="OutputDevices.html" class="w3-bar-item w3-border-bottom">Output Devices</a>
+
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <a href="#" class="w3-bar-item w3-button w3-border-bottom">Computer Softwares/Applications&nbsp;<span class="fa fa-chevron-down"></span></a>
+            <div class="w3-dropdown-content w3-animate-left">
+                <a href="#" class="w3-bar-item w3-border-bottom">MS Office</a>
+                <a href="#" class="w3-bar-item w3-border-bottom">MS EXCEL</a>
+                <a href="#" class="w3-bar-item w3-border-bottom">ETC.</a>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row w3-margin-top">
+        <div class="w3-col l2 w3-border w3-padding w3-card-2 w3-bar-block w3-border">
+            <div class="w3-border">
+                <a href="OutputDevices.html" class="w3-bar-item w3-border-bottom w3-gray">Output Devices</a>
+                <a href="Prinnters.html" class="w3-bar-item w3-border-bottom w3-green">Printers</a>
+                <a href="ImpactPrinters.html" class="w3-bar-item w3-border-bottom">Impact Printers</a>
+                <a href="NonImpactPrinters.html" class="w3-bar-item w3-border-bottom">Non Impact Prinnters</a>
+                <a href="Monitors.html" class="w3-bar-item w3-border-bottom">Monitors</a>
+            </div>
+        </div>
+        <div class="w3-col l10 w3-border w3-padding ">
+            <center><h1>PRINTER</h1></center>
+            <p>
+                Printer output device that produces text and graphics on a physical medium such as paper ,is called printer.
+                Printed information which exists physically is called hard copy.
+                Printer are generally two types Impact and Non-Impact.
+            </p>
+
+            <p>
+                printer is an output device,which produces hard copy of the output.the output is obtained on a paper
+                It is called hard copy and if it is obtained on display terminal,it is called soft copy.two of the most commnly used
+                output devices are printers or moniters.moniters produce soft copy and printers produce hard copy.some times
+                the printer output can be obtained on flims/transparancies to be used on over head projectors too.thus a printer
+                produces a permanent copy of the output.
+
+                The printers can produces plain text,  graphical images and some times complete pictures too. They can
+                produce high quality monochrome and multicolor print outs according to requirement. The speed of morden   computer
+                is very high and they can be shared through the computer networks too. The role of printer is of great importance
+                in computers field
+            </p>
+            <h2 class="w3-center">Two types of printer are Impact and Non-Impact printers.</h2>
+            <a href="#" class="w3-center"><h2>1.Impact printers</h2></a>
+            <div class="w3-container w3-center">
+                <img src="pictures/IMPACTCOMBO (2).jpg" title="PrinteRs" style="height:300px; width:500px;" class="w3-image w3-border w3-padding w3-margin" />
+            </div>
+
+            <ul type="circle">
+                <li>Impact printers are those which strike on paper through inked ribbon to produce output on it.</li>
+                <li>
+                    Normally all impact printers use a hammer against an inked ribbon such that ink from ribbon is transferred to the paper in the same
+                    shape in which hammer strikes on it.
+                </li>
+                <li>Some common impact printer are Dot Matrix Printer , Chain Printer , Drum Printer etc.</li>
+            </ul>
+
+            <a href="#" class="w3-center"><h2>2.Non-Impact printers</h2></a>
+            <div class="w3-container w3-center">
+                <img src="pictures/NONIMPACTCOMBO.jpg" title="PrinteRs" style="height:300px; width:500px;" class="w3-image w3-border w3-padding w3-margin" />
+            </div>
+            <ul type="circle">
+                <li> Non-Impact printer are those printer whose print heads do not strike to the paper  to produce output are called Non-Impact printers.</li>
+                <li>
+                    These printer use some other mechanism. It can be spraying of ink, heating of paper, some electrical or optical methods for
+                    producing paper output.
+                </li>
+                <li>These printers can produce graphical images with same efficiency as that of text images.</li>
+                <li> They can produce output at very high speed and they do not produce noise while printing Because of non impact mechanism.</li>
+                <li>
+                    The only major problem with these printer is that they could not produce multiples of copies of output in one
+                    Pass using carbon etc. because of lack of impact mechanism. But they are so fast that they can produce many copies
+                    In seconds if required. They can produce color printing too.
+                </li>
+                <li>With some of the non impact printer special magnetized papers or chemical coated papers are required, which limits their use.</li>
+                <li>
+                    Various non impact printer are ink jet printer, Laser printer, Thermal printer, Electrostatic printer,Electrographic printer,
+                    Magnetic printer etc.
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="w3-container w3-margin-top" style="background-color: rgba(0, 0, 0, 0.80); color:white;">
+        <div class="w3-row">
+            <div class="w3-col l12 w3-center w3-margin-right">
+                <h3>Study Hub</h3>
+                <hr />
+                <p>
+                    Study Hub is optimised for learning,testing,and training. Examples might be simplified to improve reading and basic undrstanding. Tutorials,refrances and
+                    examples are constantly reviewed to avoid errors,but we cannot warrant full correctness of all content.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="w3-container w3-center w3-border w3-black">
+        <div class="w3-bar w3-xxlarge w3-center ">
+            <a href="#" class="icon w3-bar-item fa fa-facebook w3-text-gray w3-hover-text-blue" style="text-decoration:none;"></a>
+            <a href="#" class="icon w3-bar-item fa fa-youtube w3-text-gray w3-hover-text-red" style="text-decoration:none;"></a>
+            <a href="#" class="icon w3-bar-item fa fa-google-plus-official w3-text-gray w3-hover-text-red" style="text-decoration:none;"></a>
+            <a href="#" class="icon w3-bar-item fa fa-twitter w3-text-gray w3-hover-text-blue" style="text-decoration:none;"></a>
+        </div>
+        <h5 class="w3-text-gray">&copy; All right Reserved to <b><a href="#" style="color:white;">Studyhub</a></b></h5>
+    </div>
+    <button id="topbtn" onclick="topFunction()">
+        <span class="fa fa-angle-double-up"></span>
+    </button>
+    <script src="JavaScript/studyhub1.js"></script>
+</body>
+</html>

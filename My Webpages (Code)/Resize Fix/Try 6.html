@@ -1,0 +1,441 @@
+<HTML><HEAD><TITLE>
+Try 6
+</TITLE>
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1">
+<LINK REL="stylesheet" HREF="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</HEAD>
+<STYLE>
+DIV.CONTAINER {
+max-WIDTH: 100%;
+}
+BODY {
+
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+HEADER {
+ PADDING: 1EM;
+ COLOR: WHITE;
+ BACKGROUND-COLOR: LIGHTSALMON;
+ CLEAR: LEFT;
+ TEXT-ALIGN: LEFT;
+}
+FOOTER {
+ PADDING: 1EM;
+ COLOR: WHITE;
+ BACKGROUND-COLOR: CORNFLOWERBLUE;
+ CLEAR: LEFT;
+ TEXT-ALIGN: CENTER;
+ max-width: 100%;
+}
+.TOPNAV {
+OVERFLOW: HIDDEN;
+BACKGROUND-COLOR: #F1F1F1;
+}
+.TOPNAV A {
+FLOAT: LEFT;
+COLOR: #555;
+BORDER: NONE;
+TEXT-ALIGN: CENTER;
+PADDING: 8PX 16PX;
+TEXT-DECORATION: NONE;
+}
+.DROPDOWN {
+FLOAT: LEFT;
+OVERFLOW: HIDDEN;
+}
+.DROPDOWN .DROPBTN {
+BORDER: NONE;
+OUTLINE: NONE;
+COLOR: #555;
+PADDING: 8PX 16PX;
+BACKGROUND-COLOR: INHERIT;
+}
+.TOPNAV A:HOVER, .DROPDOWN:HOVER .DROPBTN {
+BACKGROUND-COLOR: WHITE;
+}
+.TOPNAV A.ACTIVE {
+BACKGROUND-COLOR: #4CAF50;
+COLOR: WHITE;
+}
+.DROPDOWN-CONTENT {
+DISPLAY: NONE;
+POSITION: ABSOLUTE;
+BACKGROUND-COLOR: #F9F9F9;
+MIN-WIDTH: 160PX;
+BOX-SHADOW: 0PX 8PX 16PX 0PX RGBA(0,0,0,0.2);
+Z-INDEX: 1;
+}
+.DROPDOWN-CONTENT A {
+FLOAT: NONE;
+COLOR: BLACK;
+PADDING: 8PX 16PX;
+TEXT-DECORATION: NONE;
+DISPLAY: BLOCK;
+TEXT-ALIGN: LEFT;
+}
+.DROPDOWN-CONTENT A:HOVER {
+BACKGROUND-COLOR:  #DDD;
+}
+.DROPDOWN:HOVER .DROPDOWN-CONTENT {
+DISPLAY: BLOCK;
+}
+.MORE {
+DISPLAY: NONE;
+BORDER-TOP: 1px SOLID#000;
+BORDER-BOTTOM: 1PX SOLID#000;
+WIDTH: 100%;
+TEXT-ALIGN: CENTER;
+BACKGROUND-COLOR: TRANSPARENT;
+MARGIN-TOP: 20PX;
+}
+.BUTTON {
+BORDER-RADIUS: 4PX;
+BACKGROUND-COLOR: #F4511E;
+BORDER: NONE;
+COLOR: #FFFFFF;
+TEXT-ALIGN: CENTER;
+PADDING: 8PX 16PX;
+WIDTH: 200PX;
+TRANSITION: ALL 0.5S;
+CURSOR: POINTER;
+MARGIN: 5PX;
+}
+.BUTTON SPAN {
+CURSOR: POINTER;
+DISPLAY: INLINE-BLOCK;
+POSITION: RELATIVE;
+TRANSITION: 0.5S;
+}
+.BUTTON SPAN:AFTER {
+CONTENT: '\00BB';
+POSITION: ABSOLUTE;
+OPACITY: 0;
+TOP: 0;
+RIGHT: -20PX;
+TRANSITION: 0.5S;
+}
+.BUTTON:HOVER SPAN {
+PADDING-RIGHT: 25PX;
+}
+.BUTTON:HOVER SPAN:AFTER {
+OPACITY: 1;
+RIGHT: 0;
+}
+.FA {
+PADDING: 1EM;
+FONT-SIZE: 20PX;
+WIDTH: 20PX;
+MARGIN: 5PX 2PX;
+TEXT-ALIGN: CENTER;
+TEXT-DECORATION: NONE;
+BORDER-RADIUS: 50%;
+}
+.FA:HOVER {
+OPACITY: 0.7;
+}
+.FA-FACEBOOK {
+BACKGROUND: #3B5998;
+COLOR: WHITE;
+}
+.FA-TWITTER {
+BACKGROUND: #55ACEE;
+COLOR: WHITE;
+}
+.FA-GOOGLE {
+BACKGROUND: #DD4B39;
+COLOR: WHITE;
+}
+.FA-YOUTUBE {
+BACKGROUND: #bb0000;
+COLOR: WHITE;
+}
+INPUT[TYPE=TEXT] {
+WIDTH: 100PX;
+BORDER: SOLID #CCC;
+BORDER-RADIUS: 1PX;
+BACKGROUND-COLOR: WHITE;
+BACKGROUND-REPEAT: NO-REPEAT;
+PADDING: 8PX 16PX;
+-WEBKIT-TRANSITION: WIDTH 0.4S EASE-IN-OUT;
+TRANSITION: WIDTH 0.4S EASE-IN-OUT;
+}
+INPUT[TYPE=TEXT]:FOCUS {
+WIDTH: 100%;
+}
+IA {
+BORDER: 1PX SOLID GREY;
+BORDER-WIDTH: 0 3PX 3PX 0;
+DISPLAY: INLINE-BLOCK;
+PADDING: 3PX;
+}
+.DOWN { 
+TRANSFORM: ROTATE(45DEG);
+-WEBKIT-TRANSFORM: ROTATE(45DEG);
+}
+.MCONTAINER {
+DISPLAY: INLINE-BLOCK;
+CURSOR: POINTER;
+}
+.BAR1, .BAR2, .BAR3 {
+WIDTH: 30PX;
+HEIGHT: 3PX;
+BACKGROUND-COLOR: #333;
+MARGIN: 3PX 0;
+TRANSITION: 0.4S;
+}
+.CHANGE .BAR1 {
+-WEBKIT-TRANSFORM: ROTATE(-45DEG) TRANSLATE(-9PX,6PX);
+TRANSFORM: ROTATE(-45DEG) TRANSLATE(-9PX,6PX);
+}
+.CHANGE .BAR2 {
+OPACITY: 0;
+}
+.CHANGE .BAR3 {
+-WEBKIT-TRANSFORM: ROTATE(45DEG) TRANSLATE(-8PX,-8PX);
+TRANSFORM: ROTATE(45DEG) TRANSLATE(-8PX,-8PX);
+}
+.SIDENAV {
+HEIGHT: 100%;
+WIDTH: 0;
+POSITION: FIXED;
+Z-INDEX: 1;
+TOP: 0;
+LEFT: 0;
+BACKGROUND-COLOR: #111;
+OVERFLOW-X: HIDDEN;
+TRANSITION: 0.5S;
+PADDDING-TOP: 60PX;
+}
+.SIDENAV A {
+PADDING: 8PX 8PX 8PX 32PX;
+TEXT-DECORATION: NONE;
+FONT-SIZE: 25PX;
+COLOR: #818181;
+DISPLAY: BLOCK;
+TRANSITION: 0.3S;
+}
+.SIDENAV A:HOVER, .OFFCANVAS A:FOCUS {
+COLOR: #F1F1F1;
+}
+.SIDENAV .CLOSEBTN {
+POSITION: ABSOLUTE;
+TOP: 0;
+RIGHT: 25PX;
+FONT-SIZE: 36PX;
+MARGIN-LEFT: 50PX;
+}
+#MAIN {
+TRANSITION: MARGIN-LEFT .5S;
+PADDING: 16PX;
+}
+@MEDIA SCREEN AND (MAX-HEIGHT: 450PX) {
+.SIDENAV { PADDING-TOP: 15PX; }
+.SIDENAV A { FONT-SIZE: 18PX; }
+}
+.POPUP {
+POSITION: RELATIVE;
+DISPLAY: INLINE-BLOCK;
+CURSOR: POINTER;
+-WEBKIT-USER-SELECT: NONE;
+-MOZ-USER-SELECT: NONE;
+-MS-ISER-SELECT: NONE;
+USER-SELECT: NONE;
+}
+.POPUP .POPUPTEXT {
+VISIBILITY: HIDDEN;
+WIDTH: 160PX;
+BACKGROUND-COLOR: #555;
+COLOR: #FFF;
+TEXT-ALIGN: CENTER;
+BORDER-RADIUS: 6PX;
+PADDING: 8PX 0;
+POSITION: ABSOLUTE;
+Z-INDEX: 1;
+BOTTOM: 125%;
+LEFT: 50%;
+MARGIN-LEFT: -80PX;
+}
+.POPUP .POPUPTEXT::AFTER {
+CONTENT: "";
+POSITION: ABSOLUTE;
+TOP: 100%;
+LEFT 50%;
+MARGIN-LEFT: -5PX;
+BORDER-WIDTH: 5PX;
+BORDER-STYLE: SOLID;
+BORDER-COLOR: #555 TRANSPARENT TRANSPARENT TRANSPARENT;
+}
+.POPUP .SHOW {
+VISIBILITY: VISIBLE;
+-WEBKIT-ANIMATION: FADEIN 1S;
+ANIMATION: FADEIN 1S;
+}
+@-WEBKIT-KEYFRAMES FADEIN {
+FROM { OPACITY: 0; }
+TO { OPACITY: 1; }
+}
+@KEYFRAMES FADEIN {
+FROM { OPACITY: 0; }
+TO { OPACITY:1 ; }
+}
+</STYLE>
+<DIV CLASS="CONTAINER">
+ <HEADER>
+   <H1 ALIGN="CENTER"><I><FONT COLOR="WHITE" FACE="Kristen ITC"><STRONG>Study Hub</STRONG><SUB>.com</SUB></FONT></I></H1>
+</HEADER>
+</DIV>
+<BODY LINK="WHITE" BACKGROUND="C:\Users\Home\Desktop\Webpage\Pictures\Background - Wave.PNG">
+<DIV ID="mySidenav" CLASS="SIDENAV">
+<A HREF="" CLASS="closebtn" ONCLICK="closeNav()">&times;</A>
+<A HREF="">About</A>
+<A HREF="">Services</A>
+<A HREF="">Join Us</A>
+<A HREF="">Contact</A>
+</DIV>
+<DIV CLASS="TOPNAV">
+<A><SPAN ONCLICK="openNav()">
+ <DIV CLASS="MCONTAINER" ONCLICK="menuicon(this)">
+ <DIV CLASS="BAR1"></DIV>
+ <DIV CLASS="BAR2"></DIV>
+ <DIV CLASS="BAR3"></DIV>
+ </SPAN></DIV>
+ </A>
+<A HREF="">Home</A>
+ <A HREF="">Contact Us</A>
+<DIV CLASS="DROPDOWN">
+ <BUTTON CLASS="DROPBTN">Admins&nbsp;<IA CLASS="DOWN"></IA></BUTTON>
+ <DIV CLASS="DROPDOWN-CONTENT">
+ <A HREF="">Nakul</A>
+ <A HREF="">Faheem</A>
+ <A HREF="">Mukeish</A>
+ <A HREF="">Lakshay</A>
+ </DIV>
+ </DIV>
+  <A  CLASS="ACTIVE" STYLE="FLOAT:RIGHT" HREF="">About Us</A>
+  </DIV>
+<BR>
+<HR SIZE=7 WIDTH=60% ALIGN=LEFT COLOR=BROWN NOSHADE>
+<HR SIZE=7 WIDTH=60% ALIGN=RIGHT COLOR=BROWN NOSHADE>
+<BR>
+<H2><I><FONT COLOR="GOLDENROD" FACE="Elephant">Intro<U>duction</U></FONT></I></H2>
+<P>
+<FONT FACE="IMPACT">
+<DIV CLASS="POPUP" ONCLICK="popup()">Click Me!!!
+<SPAN CLASS="POPUPTEXT" ID="myPopup">A Simple Popup</SPAN>
+</DIV>
+<BR><BR><BR>
+<pre>
+<font color="red"><b><u>NOTE</u> :- { For more detail about every output device click on it name or image like printer, monitor etc...}</b> </font>
+
+Output result are 2 types :-
+
+1.Soft copy output (Which is present in digital form in a computer)
+
+2.Hard copy output (Which are present in paper)
+
+Some Output device are :- 
+<ul type="circle"><li><a href="printer.html" title="printer">Printer <img src="pictures/AG00158_.GIF"  title="Studyhub.in"></a></li>Printer is widely used Output device. The printer give us hard copy of output (in digital form to medium such as paper) which are show in monitor on digital form. Monitor is most use output device the monitor show result in digital form (Soft copy) lick here for See in Explain. Headphone s widely used Output device. The printer give us
+
+<li><a href="speaker.html" title="Speaker">Speaker <img src="pictures/AG00158_.GIF" title="Studyhub.in"> </a></li>
+<li><a href="monitor.html" title="Monitor">Monitor <img src="pictures/AG00158_.GIF" title="Studyhub.in"></a></li>Monitor is most use output device the monitor show result in digital form (Soft copy)
+
+<li><a href="projector.html" title="Projectors">Projectors <img src="pictures/AG00158_.GIF" title="Studyhub.in"> </a></li>
+<li><a href="headphone.html" title="Headphone">Headphone <img src="pictures/AG00158_.GIF" title="Studyhub.in"> </a></li>
+
+<font color=red><a href="http://www.studyhub.in" title="studyhub.in"><center>Homepage</center></a></font>
+</pre>
+</font>
+<DIV ID="WRAP">   
+<DIV ID="1">
+<H2><I><FONT COLOR="GOLDENROD" FACE="Elephant">MOR<U>EBUTTON</U></FONT></I></H2>
+</DIV>
+<A HREF="#" ID="example-show" CLASS="showlink" ONCLICK="showHide('example');return false;"><BUTTON CLASS="BUTTON" ONCLICK="showHide(shID)"><SPAN>Click here for See in Explain.</SPAN></BUTTON></A> 
+<DIV ID="example" CLASS="MORE">
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+Some Text<BR>
+<A HREF="#" ID="example-hide" CLASS="hidelink" ONCLICK="showHide('example');return false;"><BUTTON CLASS="BUTTON"><SPAN>Hide this content.</SPAN></BUTTON></A> 
+</DIV>
+</DIV>
+</FONT>
+</P>
+<BR>
+<HR SIZE=7 WIDTH=60% ALIGN=LEFT COLOR=BROWN NOSHADE>
+<HR SIZE=7 WIDTH=60% ALIGN=RIGHT COLOR=BROWN NOSHADE>
+<BR>
+
+</BODY>
+ <DIV CLASS="CONTAINER"> 
+<FOOTER>
+StudyHub is optimized for learning, testing, and training. Examples might be simplified to improve reading 
+and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we 
+cannot warrant full correctness of all content.
+<BR><BR>
+All Rights Reserved.
+<BR><BR>
+Copyright &copy; <STRONG>Study Hub.com</STRONG> |   
+<A HREF="MAILTO:example@gmail.com">Contact Us</A>
+<BR><BR>
+<B>We're Social</B>
+<BR>
+<A HREF=" " CLASS="FA FA-FACEBOOK"></a>
+<A HREF=" " CLASS="FA FA-TWITTER"></a>
+<A HREF=" " CLASS="FA FA-GOOGLE"></a>
+<A HREF=" " CLASS="FA FA-YOUTUBE"></a>
+</FOOTER>
+</DIV>
+<SCRIPT>
+function showHide(shID) 
+{
+   if (document.getElementById(shID)) 
+    {
+      if (document.getElementById(shID+'-show').style.display != 'none')
+       {
+         document.getElementById(shID+'-show').style.display = 'none';
+                  document.getElementById(shID).style.display = 'block';      
+       }
+
+      else 
+        {
+         document.getElementById(shID+'-show').style.display = 'inline';
+                  document.getElementById(shID).style.display = 'none'; 
+        }  
+    }
+}
+
+function menuicon(x) {
+     x.classList.toggle("change");
+}
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+function popup() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</SCRIPT>
+</HTML>

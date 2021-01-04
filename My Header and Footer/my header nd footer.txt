@@ -1,0 +1,27 @@
+<DIV CLASS="CONTAINER">
+ <HEADER>
+   <H1 ALIGN="CENTER"><I><FONT COLOR="WHITE" FACE="Kristen ITC"><STRONG>Study Hub</STRONG><SUB>.com</SUB></FONT></I></H1>
+</HEADER>
+</DIV>
+
+<h1>Dashboard</h1>
+
+<DIV CLASS="CONTAINER"> 
+<FOOTER>
+StudyHub is optimized for learning, testing, and training. Examples might be simplified to improve reading 
+and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we 
+cannot warrant full correctness of all content.
+<BR><BR>
+All Rights Reserved.
+<BR><BR>
+Copyright &copy; <STRONG>Study Hub.com</STRONG> |   
+<A HREF="MAILTO:example@gmail.com">Contact Us</A>
+<BR><BR>
+<B>We're Social</B>
+<BR>
+<A HREF=" " CLASS="FA FA-FACEBOOK"></a>
+<A HREF=" " CLASS="FA FA-TWITTER"></a>
+<A HREF=" " CLASS="FA FA-GOOGLE"></a>
+<A HREF=" " CLASS="FA FA-YOUTUBE"></a>
+</FOOTER>
+</DIV>

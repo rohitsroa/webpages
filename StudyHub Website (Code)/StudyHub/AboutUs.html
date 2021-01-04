@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>StudyHub | About Us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Study, studyhub, studyhub.ga " />
+    <meta name="author" content="Mukesh Baghel" />
+    <meta name="description" content="Studyhub.ga studyhub tutorials free , free learnig" />
+    <link rel="stylesheet" href="CSS/w3.css" />
+    <link rel="stylesheet" href="CSS/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/font-awesome-4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="CSS/studyhub1.css" />
+    <link rel="icon" href="favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" href="favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="favicons/favicon-24x24.png" sizes="24x42" />
+    <link rel="icon" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" href="favicons/favicon-160x160.png" sizes="160x160" />
+    <link rel="icon" href="favicons/favicon-196x196.png" sizes="196x196" />
+
+    <style>
+        w3-row {
+            width: 800px;
+            position: relative;
+            left: 17%;
+            z-index: -1;
+        }
+
+        .card {
+            width: 32%;
+            float: left;
+            border: 3px solid rgb(168, 167, 167);
+        }
+
+        @media screen and (max-width:600px) {
+            .card {
+                // float:none;
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body onscroll="stickyNav()">
+    <div class="w3-card-4 w3-container w3-margin-top w3-center w3-round-xlarge">
+        <h1>
+            <a href="index.html" style="text-decoration:none; font-family:Lobster; font-size:35px;">
+                <span class="glyphicon glyphicon-leaf w3-text-teal w3-xxxlarge"></span>
+                <br /><span class="w3-border">
+                    <span class="w3-teal">Study</span>
+                    <span class="w3-text-teal">Hub</span>
+                </span>
+            </a>
+        </h1>
+    </div>
+    <div id="nav" class="w3-bar w3-card-4 w3-padding-16 w3-round-large w3-margin-top w3-white">
+        <button class="w3-bar-item w3-button w3hover-green w3-border-right" onclick="w3_open()">
+            <div style="background-color:black; margin-bottom:3px;height:3px; width:17px;"></div>
+            <div style="background-color:black; margin-bottom:3px; height:3px; width:14px;"></div>
+            <div style="background-color:black; margin-bottom:3px; height:3px; width:10px;"></div>
+        </button>
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-green w3-border-right">StudyHub</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-green w3-border-right">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-green w3-border-right">Contact</a>
+        <a href="#" class="w3-bar-item w3-right w3-hide-large w3-hide-medium w3-button " onclick="opennav(), xanimation(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </a>
+            <a href="#" class="w3-hide-small w3-right w3-button w3-hover-green w3-border-right w3-border-left w3-margin-right">About Us</a>
+    </div>
+
+
+
+    <div id="mobNav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-center w3-card w3-light-gray w3-animate-opacity">
+        <a href="index.html" class="w3-bar-item w3-button w3-border-bottom">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-border-bottom">Contact</a>
+            <a href="#" class=" w3-bar-item w3-button w3-border-bottom">About Us</a>
+    </div>
+
+    <div class="w3-sidebar w3-bar-block w3-card-2 w3-center" id="mySidebar">
+        <div class="w3-bar-item w3-button w3-green w3-hover-green">
+            <h3>
+                <span class="glyphicon glyphicon-leaf w3-text-teal w3-xxlarge"></span><br />
+                <span class="w3-border">
+                    <span class="w3-teal">Study</span>
+                    <span class="w3-text-white">Hub</span>
+                </span>
+            </h3>
+            <button class="w3-display-topright w3-hover-red w3-button w3-xlarge w3-text-red" onclick="w3_close()">&times;</button>
+        </div>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-border-bottom  w3-center">Computer Info.&nbsp;<span class="fa fa-chevron-down"></span></button>
+            <div class="w3-dropdown-content w3-animate-left">
+                <a href="#" class="w3-bar-item w3-border-bottom w3-center">How Does Computer Wrorks!</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-center w3-border-bottom">Computer Hardware&nbsp;<span class="fa fa-chevron-down"></span></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-left">
+                <a href="OutputDevices.html" class="w3-bar-item w3-border-bottom ">Output Devices</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <a href="#" class="w3-bar-item w3-button w3-border-bottom">Computer Softwares/Applications&nbsp;<span class="fa fa-chevron-down"></span></a>
+            <div class="w3-dropdown-content w3-animate-left">
+                <a href="#" class="w3-bar-item w3-border-bottom">MS Office</a>
+                <a href="#" class="w3-bar-item w3-border-bottom">MS EXCEL</a>
+                <a href="#" class="w3-bar-item w3-border-bottom">ETC.</a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="w3-container w3-center w3-margin">
+        <h1>About Us</h1>
+        <p>
+            We are Here for You, One day we are serching some study material for us to study but we could not find any thing clear and easly under standable.
+            and if found some thing good that was not free,so we decided to provide these services to the unreachable.
+        </p>
+       <h2>Who We Are</h2>
+        <p>
+            We are the Student of diploma in Computer.
+            From Guru Tegh Bahadur Polytechnic Institue.
+        </p>
+    </div>
+
+    <div class="w3-row-padding">
+        <div class="w3-col l2" style="color:white">1</div>
+        <div class="w3-col l8" style="border:3px solid rgb(168, 167, 167);">
+            <div class="w3-container w3-center">
+                <h2>OUR TEAM</h2>
+            </div>
+            <div class="w3-row-padding w3-margin w3-padding">
+                <div class="w3-container w3-card-4 w3-margin-bottom w3-padding w3-margin-right card" >
+                    <img src="pictures/nakul.jpg" style="width:100%; height:100%;" />
+                    <div class="w3-container w3-center">
+                        <h3>Nakul</h3>
+                        <p>
+                            Software trainee
+                            <br />Student at GTBPI
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-container w3-card-4 w3-margin-bottom w3-padding w3-margin-right card" >
+                    <img src="pictures/mukesh.jpg" style="width:100%; height:100%;" />
+                    <div class="w3-container w3-center">
+                        <h3>Mukesh Baghel</h3>
+                        <p>
+                            Software trainee
+                            <br />Student at GTBPI
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card-4 w3-margin-bottom w3-padding card" >
+                    <img src="pictures/faheem.jpg" style="width:100%; height:100%;" />
+                    <div class="w3-container w3-center">
+                        <h3>Faheem Saifi</h3>
+                        <p>
+                            Software trainee
+                            <br />Student at GTBPI
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-margin w3-padding">
+
+                <div class="w3-container w3-third w3-card-4 w3-margin-bottom w3-padding w3-margin-right card">
+                    <img src="pictures/laka.jpg" style="width:100%; height:100%;" />
+                    <div class="w3-container w3-center">
+                        <h3>Lakshay Moonga</h3>
+                        <p>
+                            Software trainee
+                            <br />Student at GTBPI
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-third w3-card-4 w3-margin-bottom w3-padding w3-margin-right card" >
+                    <img src="pictures/akash11.jpg" style="width:100%; height:100%;" />
+                    <div class="w3-container w3-center">
+                        <h3>Akash Verma</h3>
+                        <p>
+                            Software trainee
+                            <br />Student at GTBPI
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-third w3-card-4 w3-margin-bottom w3-padding card">
+                    <img src="pictures/rajleen.jpg" style="width:100%; height:100%;" />
+                    <div class="w3-container w3-center">
+                        <h3>Rajleen Kaur</h3>
+                        <p>
+                            Software trainee
+                            <br />Student at GTBPI
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col l2" style="color:white">1</div>
+    </div>
+    <!--
+    <div class="w3-container w3-border w3-margin">
+        <div class="w3-container w3-center">
+            <h2>OUR TEAM</h2>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col l3"></div>
+            <div class="w3-col l9">
+                <div class="w3-row-padding w3-margin w3-padding">
+                    <div class="w3-container w3-third w3-card-4 w3-margin-bottom w3-padding w3-border">
+                        <img src="pictures/nakul.jpg" style="width:100%; height:100%;" />
+                        <div class="w3-container w3-center">
+                            <h3>Nakul</h3>
+                            <p>
+                                Software trainee
+                                <br />Student at GTBPI
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-third w3-card-4 w3-margin-bottom w3-padding w3-border">
+                        <img src="pictures/mukesh.jpg" style="width:100%; height:100%;" />
+                        <div class="w3-container w3-center">
+                            <h3>Mukesh Baghel</h3>
+                            <p>
+                                Software trainee
+                                <br />Student at GTBPI
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w3-container w3-third w3-card-4 w3-margin-bottom w3-padding w3-border">
+                        <img src="pictures/faheem.jpg" style="width:100%; height:100%;" />
+                        <div class="w3-container w3-center">
+                            <h3>Faheem Saifi</h3>
+                            <p>
+                                Software trainee
+                                <br />Student at GTBPI
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-margin w3-padding">
+
+                    <div class="w3-container w3-third w3-card-4 w3-margin-bottom w3-padding w3-border">
+                        <img src="pictures/laka.jpg" style="width:100%; height:100%;" />
+                        <div class="w3-container w3-center">
+                            <h3>Lakshay Moonga</h3>
+                            <p>
+                                Software trainee
+                                <br />Student at GTBPI
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w3-container w3-third w3-card-4 w3-margin-bottom w3-padding w3-border">
+                        <img src="pictures/akash11.jpg" style="width:100%; height:100%;" />
+                        <div class="w3-container w3-center">
+                            <h3>Akash Verma</h3>
+                            <p>
+                                Software trainee
+                                <br />Student at GTBPI
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w3-container w3-third w3-card-4 w3-margin-bottom w3-padding w3-border">
+                        <img src="pictures/rajleen.jpg" style="width:100%; height:100%;" />
+                        <div class="w3-container w3-center">
+                            <h3>Rajleen Kaur</h3>
+                            <p>
+                                Software trainee
+                                <br />Student at GTBPI
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3"></div>
+        </div>
+    </div>-->
+
+    <div class="w3-container w3-margin-top w3-text-gray" style="background-color: rgb(51, 51, 51); color:white;">
+        <div class="w3-row">
+            <div class="w3-col l12 w3-center w3-margin-right">
+                <h3>Study Hub</h3>
+                <hr />
+                <p>
+                    Study Hub is optimised for learning,testing,and training. Examples might be simplified to improve reading and basic undrstanding. Tutorials,refrances and
+                    examples are constantly reviewed to avoid errors,but we cannot warrant full correctness of all content.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="iconbar w3-container w3-center">
+        <div class="w3-bar w3-xxlarge w3-center ">
+            <a href="#" class="icon w3-bar-item fa fa-facebook w3-text-gray w3-hover-text-blue" style="text-decoration:none;sx"></a>
+            <a href="#" class="icon w3-bar-item fa fa-youtube w3-text-gray w3-hover-text-red" style="text-decoration:none;"></a>
+            <a href="#" class="icon w3-bar-item fa fa-google-plus-official w3-text-gray w3-hover-text-red" style="text-decoration:none;"></a>
+            <a href="#" class="icon w3-bar-item fa fa-twitter w3-text-gray w3-hover-text-blue" style="text-decoration:none;"></a>
+        </div>
+        <h5 class="w3-text-gray">&copy; All right Reserved to <b><a href="#" style="color:white;">Studyhub.<small style="color:white;">ga&nbsp;&nbsp;2017</small></a></b></h5>
+    </div>
+
+    <button id="topbtn" onclick="topFunction()">
+        <span class="fa fa-angle-double-up"></span>
+    </button>
+    <!--
+    <script type="text/javascript">
+        var navbar = document.getElementById("nav");
+        var sticky = navbar.offsetTop;
+        function stickyNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+                navbar.classList.remove("w3-margin-top")
+            } else {
+                navbar.classList.remove("sticky");
+                navbar.classList.add("w3-margin-top")
+            }
+            scrollFunction();
+        }
+
+       /*  window.onscroll = function () {
+            scrollFunction();
+        } */
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topbtn").style.display = "block";
+            } else {
+                document.getElementById("topbtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>-->
+    <script src="JavaScript/studyhub1.js"></script>
+</body>
+</html>
